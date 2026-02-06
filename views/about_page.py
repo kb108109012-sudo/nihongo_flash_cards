@@ -15,6 +15,6 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
-left_co, cent_co,last_co = st.columns([0.9, 5, 0.2])
+left_co, cent_co,last_co = st.columns(3)
 with cent_co:
     st.image("assets/bookcover.png", width=500)
