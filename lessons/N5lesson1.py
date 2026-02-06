@@ -1,6 +1,7 @@
 ###### Import packages
 import pandas as pd
 import streamlit as st
+from common.common import *
 
 st.set_page_config(layout="wide")
 
@@ -29,11 +30,6 @@ st.divider()
 
 if 'button_states' not in st.session_state:
     st.session_state.button_states = {f"btn_{i}": False for i in range(49)}
-
-def click_button(button_key):
-    """Callback function to update the button state."""
-    # Toggle the state of the clicked button
-    st.session_state.button_states[button_key] = not st.session_state.button_states[button_key]
 
 dfArray = df.to_numpy()
 

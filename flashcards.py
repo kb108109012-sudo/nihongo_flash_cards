@@ -49,7 +49,7 @@ pg = st.navigation(
 
 # Shared on all pages
 st.logo("assets/icon.png")
-st.sidebar.text("Made by キルタナ")
+st.sidebar.text("Made by キールタナ")
 
 
 # run
