@@ -49,8 +49,8 @@ for i in range(n_rows):
         button_key = f"btn_{count_word}"
         with cols[j]:
             # Change button label/appearance based on state (optional)
-            label = f"{dfArray[i*n_cols+j][0]}" if st.session_state.button_states[button_key] \
-                else f"{dfArray[i*n_cols+j][1]}"
+            label = f"{dfArray[count_word][0]}" if st.session_state.button_states[button_key] \
+                else f"{dfArray[count_word][1]}"
             st.button(
                 label,
                 key=button_key,

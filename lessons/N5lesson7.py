@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 ## to change the size of the button
 st.markdown(
     """
-<h1 style='text-align: center;'>みんなのにほんご Lesson 3 Vocabulary</h1>
+<h1 style='text-align: center;'>みんなのにほんご Lesson 7 Vocabulary</h1>
 <style>
 button {
     height: auto;
@@ -22,17 +22,18 @@ button {
 )
 
 #### Read vocab list
-df = pd.read_csv("assets/lessonN53.csv", delimiter=",")
+df = pd.read_csv("assets/lessonN57.csv", delimiter=",")
 japanese_words = df['Japanese'].to_numpy()
 english_words = df['English'].to_numpy()
 
 st.divider()
 
-n_rows = 6
+n_rows = 8
 n_cols = 7
 
 if 'button_states' not in st.session_state:
     st.session_state.button_states = {f"btn_{i}": False for i in range(n_rows*n_cols)}
+
 
 dfArray = df.to_numpy()
 
@@ -48,8 +49,8 @@ for i in range(n_rows):
         button_key = f"btn_{count_word}"
         with cols[j]:
             # Change button label/appearance based on state (optional)
-            label = f"{dfArray[count_word][1]}" if st.session_state.button_states[button_key] \
-                else f"{dfArray[count_word][0]}"
+            label = f"{dfArray[count_word][0]}" if st.session_state.button_states[button_key] \
+                else f"{dfArray[count_word][1]}"
             st.button(
                 label,
                 key=button_key,
