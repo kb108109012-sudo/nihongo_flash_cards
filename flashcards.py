@@ -47,12 +47,25 @@ N5Lesson7 = st.Page(
     title="Lesson 7",
     icon=":material/book:"
 )
+N5Lesson8 = st.Page(
+    page="lessons/N5lesson8.py",
+    title="Lesson 8",
+    icon=":material/book:"
+)
+N5Lesson9 = st.Page(
+    page="lessons/N5lesson9.py",
+    title="Lesson 9",
+    icon=":material/book:"
+)
+
 
 # navigation
 pg = st.navigation(
     {
         "Info": [about_page],
-        "N5" : [N5Lesson1, N5Lesson2, N5Lesson3, N5Lesson4, N5Lesson5, N5Lesson6, N5Lesson7],
+        "N5" : [N5Lesson1, N5Lesson2, N5Lesson3, N5Lesson4, 
+                N5Lesson5, N5Lesson6, N5Lesson7, N5Lesson8, 
+                N5Lesson9],
     }
 )
 
