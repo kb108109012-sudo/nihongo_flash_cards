@@ -58,11 +58,18 @@ N5Lesson9 = st.Page(
     icon=":material/book:"
 )
 
+Verb = st.Page(
+    page="lessons/verbs.py",
+    title="Verb",
+    icon=":material/book:"
+)
+
 
 # navigation
 pg = st.navigation(
     {
         "Info": [about_page],
+        "Forms" : [Verb],
         "N5" : [N5Lesson1, N5Lesson2, N5Lesson3, N5Lesson4, 
                 N5Lesson5, N5Lesson6, N5Lesson7, N5Lesson8, 
                 N5Lesson9],
