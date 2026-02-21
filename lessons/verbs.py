@@ -5,7 +5,7 @@ import numpy as np
 
 df = pd.read_csv("assets/verb_masu.csv", delimiter=",")
 
-st.title(f"Verb {df.columns[1]}")
+st.title(f"Verb {df.columns[0]}")
 st.write("")
 st.divider()
 st.write("")
