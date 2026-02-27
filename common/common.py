@@ -32,7 +32,9 @@ def buttonGrid(n_rows, n_cols, df):
             with cols[j]:
                 # Change button label/appearance based on state (optional)
                 if st.session_state.button_states[button_key]:
-                    autoplay_audio("assets/click.mp3")
+                    converter.say(dfArray[count_word][0])
+                    #autoplay_audio(converter.runAndWait())
+
                     label = f"{dfArray[count_word][1]}"
                 else:
                     label = f"{dfArray[count_word][0]}"
