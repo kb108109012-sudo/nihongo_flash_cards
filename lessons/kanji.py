@@ -25,7 +25,7 @@ button {
 df = pd.read_csv("assets/kanji.csv", delimiter=",")
 st.divider()
 
-n_rows = 2
+n_rows = 4
 n_cols = 5
 
 # initialize button state in st.session_state
