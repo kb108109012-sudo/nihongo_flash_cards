@@ -8,12 +8,12 @@ st.set_page_config(layout="wide")
 ## to change the size of the button
 st.markdown(
     """
-<h1 style='text-align: center;'＞かんじ</h1>
+<h1 style='text-align: center;'>かんじ</h1>
 <style>
 button {
     height: auto;
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
 </style>
 
