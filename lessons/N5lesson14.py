@@ -8,12 +8,12 @@ st.set_page_config(layout="wide")
 ## to change the size of the button
 st.markdown(
     """
-<h1 style='text-align: center;'>かんじ</h1>
+<h1 style='text-align: center;'>みんなのにほんご Lesson 14 Vocabulary</h1>
 <style>
 button {
     height: auto;
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
 </style>
 
@@ -22,11 +22,11 @@ button {
 )
 
 #### Read vocab list
-df = pd.read_csv("assets/kanji.csv", delimiter=",")
+df = pd.read_csv("assets/lessonN5_14.csv", delimiter=",")
 st.divider()
 
-n_rows = 10
-n_cols = 5
+n_rows = 8
+n_cols = 6
 
 # initialize button state in st.session_state
 initializeButtons(n_rows, n_cols)

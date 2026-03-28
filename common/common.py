@@ -25,6 +25,7 @@ def buttonGrid(n_rows, n_cols, df):
     words = df.shape[0]
     count_word = 0
     dfArray = df.to_numpy()
+
     for i in range(n_rows):
         cols = st.columns(n_cols)
         for j in range(n_cols):
@@ -49,5 +50,5 @@ def buttonGrid(n_rows, n_cols, df):
                     use_container_width=True
                 )
             count_word = count_word + 1
-            if count_word == words:
-                break
+            if count_word == words :
+                return
