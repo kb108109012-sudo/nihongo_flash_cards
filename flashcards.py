@@ -116,6 +116,7 @@ pg = st.navigation(
 # Shared on all pages
 st.logo("assets/icon.png")
 st.sidebar.text("Made by キールタナ")
+st.sidebar.image("assets/psyduck.png",width=150)
 
 
 # run
