@@ -5,30 +5,81 @@ import numpy as np
 
 df = pd.read_csv("assets/verb_masu.csv", delimiter=",")
 
-st.title(f"Verb {df.columns[0]}")
+st.title(f"Verb {df.columns[0]} and て Form")
 st.write("")
 st.divider()
-st.write("")
+
+st.header("Rules:")
+st.write("Group 1: 2 syllable and い line")
+st.write("Group 1: (い、ち、り) - って　(に、び、み) - んで　(き) - いて　(ぎ) - いで　(し) - して")
+st.write("Group 2: 1 syllable and え line")
+st.write("Group 2: + て")
+st.write("Group 3: きます、します")
+st.write("Group 3: + て")
+
+st.divider()
+
+st.write("Group 1 looking, but are in group 2 (exceptions):")
+st.write("おきます　かり　おり　あび　でき　たり")
+
+st.divider()
+
 st.write("")
 st.write("Lesson 4")
 
 # Lesson4
 st.dataframe(
-    df.iloc[2:7],
+    df.iloc[1:7],
     hide_index=True,)
 
 st.write("Lesson 5")
 # Lesson5
 st.dataframe(
-    df.iloc[9:11],
+    df.iloc[8:11],
     hide_index=True,)
 st.write("Lesson 6")
 # Lesson6
 st.dataframe(
-    df.iloc[13:23],
+    df.iloc[12:23],
     hide_index=True,)
 st.write("Lesson 7")
 # Lesson7
 st.dataframe(
-    df.iloc[26:33],
+    df.iloc[24:33],
+    hide_index=True,)
+
+st.write("Lesson 9")
+# Lesson9
+st.dataframe(
+    df.iloc[34:36],
+    hide_index=True,)
+
+st.write("Lesson 10")
+# Lesson10
+st.dataframe(
+    df.iloc[37:39],
+    hide_index=True,)
+
+st.write("Lesson 11")
+# Lesson11
+st.dataframe(
+    df.iloc[40:46],
+    hide_index=True,)
+
+st.write("Lesson 13")
+# Lesson13
+st.dataframe(
+    df.iloc[47:57],
+    hide_index=True,)
+
+st.write("Lesson 14")
+# Lesson14
+st.dataframe(
+    df.iloc[58:79],
+    hide_index=True,)
+
+st.write("Lesson 15")
+# Lesson15
+st.dataframe(
+    df.iloc[80:88],
     hide_index=True,)
