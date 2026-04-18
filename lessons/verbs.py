@@ -83,3 +83,15 @@ st.write("Lesson 15")
 st.dataframe(
     df.iloc[80:88],
     hide_index=True,)
+
+st.write("Lesson 16")
+# Lesson16
+st.dataframe(
+    df.iloc[89:103],
+    hide_index=True,)
+
+st.write("Lesson 17")
+# Lesson17
+st.dataframe(
+    df.iloc[104:118],
+    hide_index=True,)
