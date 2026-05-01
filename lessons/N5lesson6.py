@@ -29,6 +29,9 @@ st.divider()
 n_rows = 9
 n_cols = 7
 
+n_rows = 14
+n_cols = 10
+
 # initialize button state in st.session_state
 initializeButtons(n_rows, n_cols)
 
